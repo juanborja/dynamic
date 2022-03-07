@@ -20,7 +20,7 @@ public class Dijkstra {
         this.adj = adj;
 
         for (int i = 0; i < V; i++)
-            dist[i] = Integer.MAX_VALUE;
+            dist[i] = 999999999;
 
         // Add source node to the priority queue
         pq.add(new Node(src, 0));

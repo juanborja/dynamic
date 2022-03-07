@@ -3,9 +3,9 @@ package com.company.algoritmos;
 import java.util.List;
 
 public class FloydWarshall {
-    public final static int INF = 99999, V = 5;
-
-    public void floydWarshall(List<List<Node>> graph)
+    public final static int INF = 999999999;
+    private int solution[][] = null;
+    public FloydWarshall(List<List<Node>> graph, int V)
     {
         int dist[][] = new int[V][V];
         int i, j, k;
@@ -28,7 +28,7 @@ public class FloydWarshall {
                 if(dist[ix][nod.node] > nod.cost){
                     dist[ix][nod.node] = nod.cost;
                 }
-                System.out.println(ix+", "+nod.node+", "+nod.cost);
+
             }
             ix++;
         }
@@ -69,23 +69,34 @@ public class FloydWarshall {
             }
         }
 
-        // Print the shortest distance matrix
-        printSolution(dist);
+
+        this.solution = dist;
     }
-    void printSolution(int dist[][])
+    public void printSolution()
     {
+
         System.out.println("The following matrix shows the shortest "+
                 "distances between every pair of vertices");
-        for (int i=0; i<V; ++i)
+        for (int i=0; i<this.solution.length; ++i)
         {
-            for (int j=0; j<V; ++j)
+            for (int j=0; j<this.solution.length; ++j)
             {
-                if (dist[i][j]==INF)
+                if (this.solution[i][j]==INF)
                     System.out.print("INF ");
                 else
-                    System.out.print(dist[i][j]+"   ");
+                    System.out.print(this.solution[i][j]+"   ");
             }
             System.out.println();
         }
+    }
+
+    public int shortedPath(int x, int y) {
+        try {
+            return this.solution[x][y];
+        }
+        catch(Exception e){
+            return INF;
+        }
+
     }
 }
