@@ -1,4 +1,4 @@
-package com.company.algoritmos;
+package com.company.algorithms;
 import java.util.*;
 
 public class Dijkstra {
@@ -6,7 +6,7 @@ public class Dijkstra {
     private Set<Integer> settled;
     private PriorityQueue<Node> pq;
     private int V;
-    List<List<Node> > adj;
+    HashMap<String, List<Node> > adj;
 
     public Dijkstra(int ver) {
         this.V = ver;
@@ -15,7 +15,7 @@ public class Dijkstra {
         pq = new PriorityQueue<Node>(V, new Node());
 
     }
-    public void dijkstra(List<List<Node> > adj, int src)
+    public void dijkstra(HashMap<String, List<Node> > adj, int src)
     {
         this.adj = adj;
 
@@ -23,7 +23,7 @@ public class Dijkstra {
             dist[i] = 999999999;
 
         // Add source node to the priority queue
-        pq.add(new Node(src, 0));
+        pq.add(new Node(src+"", 0, "Richard"));
 
         // Distance to the source is 0
         dist[src] = 0;

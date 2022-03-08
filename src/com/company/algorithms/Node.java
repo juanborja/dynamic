@@ -1,25 +1,28 @@
-package com.company.algoritmos;
+package com.company.algorithms;
 
 import java.util.Comparator;
 
 public class Node implements Comparator<Node> {
 
-    // Member variables of this class
-    public int node;
-    public int cost;
 
+    public int cost;
+    public String city;
+    public String person;
     // Constructors of this class
 
     // Constructor 1
     public Node() {}
 
-    // Constructor 2
-    public Node(int node, int cost)
+
+
+
+    public Node( String city,  int cost, String person )
     {
 
-        // This keyword refers to current instance itself
-        this.node = node;
+
         this.cost = cost;
+        this.city = city;
+        this.person = person;
     }
 
     // Method 1

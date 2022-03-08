@@ -1,4 +1,4 @@
-package com.company.algoritmos;
+package com.company.algorithms;
 
 import java.util.List;
 
