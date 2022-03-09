@@ -23,7 +23,7 @@ public class Dijkstra {
             dist[i] = 999999999;
 
         // Add source node to the priority queue
-        pq.add(new Node(src, 0));
+        pq.add(new Node(src, 0, ""));
 
         // Distance to the source is 0
         dist[src] = 0;
@@ -74,7 +74,7 @@ public class Dijkstra {
                     dist[v.node] = newDistance;
 
                 // Add the current node to the queue
-                pq.add(new Node(v.node, dist[v.node]));
+                pq.add(new Node(v.node, dist[v.node], ""));
             }
         }
     }

@@ -7,6 +7,7 @@ public class Node implements Comparator<Node> {
     // Member variables of this class
     public int node;
     public int cost;
+    public String person;
 
     // Constructors of this class
 
@@ -14,12 +15,13 @@ public class Node implements Comparator<Node> {
     public Node() {}
 
     // Constructor 2
-    public Node(int node, int cost)
+    public Node(int node, int cost, String person)
     {
 
         // This keyword refers to current instance itself
         this.node = node;
         this.cost = cost;
+        this.person = person;
     }
 
     // Method 1
@@ -33,5 +35,14 @@ public class Node implements Comparator<Node> {
             return 1;
 
         return 0;
+    }
+
+    @Override
+    public String toString() {
+        return "Node{" +
+                "node=" + node +
+                ", cost=" + cost +
+                ", person='" + person + '\'' +
+                '}';
     }
 }
