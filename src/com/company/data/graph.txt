@@ -1,0 +1,18 @@
+Senillosa, Arroyito, 300, Ricardo
+Neuquen, Senillosa, 400, Pedro
+Neuquen, Centenario, 300, Laura
+Centenario, Vista Alegre, 0, Luis
+Vista Alegre, Mari Menuco, 600, Maria
+Mari Menuco, Añelo, 0, Alejandra,
+Añelo, Las Cortaderas, 650, Felipe
+Las Cortaderas, Buta Ranquil, 100, Raquel
+Buta Ranquil, Bardas Blancas, 1000, Luna
+Bardas Blancas, La Consulta, 2000, Diego
+La Consulta, Lujan de Cuyo, 0, Lina
+Lujan de Cuyo, Mendoza, 50, Marina
+Neuquen, Fernandez Oro, 300, Luciano
+Fernandez Oro, Villa Regina, 150, Julian
+Villa Regina,  Choele-choel, 0, Marta
+Choele-choel, Rio Colorado, 60, Miguel
+Rio Colorado, Bahia Blanca, 700, Martin
+Bahia Blanca, Viedma, 0, Lucrecia
