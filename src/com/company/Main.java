@@ -1,13 +1,11 @@
 package com.company;
 
-import com.company.algoritmos.Dijkstra;
-import com.company.algoritmos.FloydWarshall;
-import com.company.algoritmos.Node;
+import com.company.algorithm.Dijkstra;
+import com.company.algorithm.FloydWarshall;
+import com.company.algorithm.Node;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import static com.company.algoritmos.FloydWarshall.INF;
 
 public class Main {
     public final static int INF = 999999999;
