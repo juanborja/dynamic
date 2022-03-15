@@ -8,12 +8,44 @@ import java.util.*;
 
 public class dataLoader {
     public static Set<String> cityNumbers = new HashSet<>();
+    public static void generateFiles(String filePath, int[] sizes){
+        for(int i=0; i< sizes.length; i++){
+        File file = new File(filePath);
+        BufferedReader br = null;
+        try {
+            br = new BufferedReader(new FileReader(file));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
 
+        String st;
+        boolean finish = false;
+        int lines =0;
+        File graphAux = new File("/Users/juan/code/sp/src/com/company/data/generated/graph-"+sizes[i]);
+        while (!finish && lines<sizes[i])
+        // Print the string
+        {
+            try {
+                if (!((st = br.readLine()) != null)) finish = true;
+                if(st!= null){
+                    BufferedWriter out = new BufferedWriter(
+                            new FileWriter(graphAux, true));
+                    out.write(st+"\n");
+                    out.close();
+                }
+            }
+            catch(Exception e){
+
+            }
+        lines++;
+        }
+
+        }
+
+    }
     private static void loadCityNumbers(String filePath){
         File file = new File(filePath);
         BufferedReader br = null;
-        List<List<Node>> graph
-                = new ArrayList<List<Node> >();
         try {
             br = new BufferedReader(new FileReader(file));
         } catch (FileNotFoundException e) {
@@ -77,7 +109,7 @@ public class dataLoader {
         {
             try {
                 if (!((st = br.readLine()) != null)) finish = true;
-                System.out.println(st);
+                // System.out.println(st);
                 if(st!=null){
                     String[] values = st.split(",") ;
                     try {
@@ -102,9 +134,7 @@ public class dataLoader {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-
         }
-        System.out.println(cityNumbers);
         return graph;
 
     }
@@ -129,5 +159,9 @@ public class dataLoader {
              return "INF";
          }
 
+    }
+
+    public static Set<String> getCityNumbers() {
+        return cityNumbers;
     }
 }
