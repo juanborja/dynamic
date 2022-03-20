@@ -9,6 +9,10 @@ import java.util.*;
 public class dataLoader {
     public static Set<String> cityNumbers = new HashSet<>();
     public static void generateFiles(String filePath, int[] sizes){
+        File dir = new File("/Users/juan/code/sp/src/com/company/data/generated/");
+        for(File file: dir.listFiles())
+            if (!file.isDirectory())
+                file.delete();
         for(int i=0; i< sizes.length; i++){
         File file = new File(filePath);
         BufferedReader br = null;
