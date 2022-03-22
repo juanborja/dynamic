@@ -16,3 +16,89 @@ Villa Regina,  Choele-choel, 0, Marta
 Choele-choel, Rio Colorado, 60, Miguel
 Rio Colorado, Bahia Blanca, 700, Martin
 Bahia Blanca, Viedma, 0, Lucrecia
+Viedma, Las Grutas, 234, Carlos
+Las Grutas, Trelew, 300, Julia
+Trelew, Comodoro Rivadavia, 1200, Fernando
+Comodoro Rivadavia, Caleta Olivia, 908, Julio
+Caleta Olivia, Rio Gallegos, 567, Monica
+Rio Gallegos, Punta Arenas, 3000, Jorge
+Punta Arenas, Ushuaia, 2500, Maria
+Usuahia, Rio Gallegos, 5000, Pedro
+Mendoza, San Juan, 1200, Ricardo
+San Juan, Chilecito, 345, Mariano
+Chilecito, Cafayate, 1234, Jose
+Cafayate, Cachi, 450, Mercedes
+Cachi, Salta, 1234, Marcos
+Salta, Tilcara, 2000, Mirna
+Tilcara, Tartagal, 1234, Eva
+Tartagal, Corrientes, 456, Rafael
+Corrientes, Santa Fe, 1234, Mariel
+Santa Fe, Rosario, 3456, Pia
+Rosario, Buenos Aires, 4000, Leandro
+Buenos Aires, La Plata, 0, Victor
+La Plata, Villa Gesell, 500, Magdalena
+Villa Gesell, Necochea, 0, Marcela
+Necochea, Monte Hermoso, 345, Gerardo
+Monte Hermoso, Punta Alta, 234, Marta
+Punta Alta, Pehuen-co, 120, Martin
+Pehuen-co, Bahia Blanca, 567, Monica
+Bahia Blanca, Santa Rosa, 125, Claudio
+Santa Rosa, Victorica, 345, Clara
+Victorica, Casa de Piedra, 345, Marcela
+Casa de Piedra, Villa Regina, 789, Alberto
+Villa Regina, Sierra Grande, 678, Manuel
+Sierra Grande, Trelew, 0, Adrian
+Trelew, Paso de Indios, 3456, Camila
+Paso de Indios, Esquel, 234, Julian
+Senillosa, Arroyito, 302, Jorge
+Neuquen, Senillosa, 430, Maria Jose
+Neuquen, Centenario, 309, Matias
+Centenario, Vista Alegre, 78, Luisa
+Vista Alegre, Mari Menuco, 605, Dario
+Mari Menuco, Añelo, 1000, Alejandro,
+Añelo, Las Cortaderas, 656, Alfredo
+Las Cortaderas, Buta Ranquil, 10000, Jose Luis
+Buta Ranquil, Bardas Blancas, 1021, Sebastian
+Bardas Blancas, La Consulta, 20, Pablo
+La Consulta, Lujan de Cuyo, 90, Jesica
+Lujan de Cuyo, Mendoza, 5000, Soledad
+Neuquen, Fernandez Oro, 334, Luciana
+Fernandez Oro, Villa Regina, 1500, David
+Villa Regina,  Choele-choel, 1240, Simon
+Choele-choel, Rio Colorado, 6009, Braulio
+Rio Colorado, Bahia Blanca, 7089, Maximo
+Bahia Blanca, Viedma, 12340, Milton
+Viedma, Las Grutas, 2134, Saul
+Las Grutas, Trelew, 1230, Lidia
+Trelew, Comodoro Rivadavia, 1213, Evangelina
+Comodoro Rivadavia, Caleta Olivia, 12343, Juan
+Caleta Olivia, Rio Gallegos, 1567, Mariela
+Rio Gallegos, Punta Arenas, 312, Agustina
+Punta Arenas, Ushuaia, 2123, Agustin
+Usuahia, Rio Gallegos, 5234, Benito
+Mendoza, San Juan, 132, Mauro
+San Juan, Chilecito, 3123, Maxi
+Chilecito, Cafayate, 123, Diego
+Cafayate, Cachi, 12342, Benjamin
+Cachi, Salta, 1134, Milagros
+Salta, Tilcara, 20123, Nicola
+Tilcara, Tartagal, 1123, Juan Pedro
+Tartagal, Corrientes, 4156, Luis Miguel
+Corrientes, Santa Fe, 1214, Virginia
+Santa Fe, Rosario, 156, Lorenzo
+Rosario, Buenos Aires, 100, Tomas
+Buenos Aires, La Plata, 120, Joaquin
+La Plata, Villa Gesell, 5120, Milena
+Villa Gesell, Necochea, 10, Miguel
+Necochea, Monte Hermoso, 3123, Carlos Alberto
+Monte Hermoso, Punta Alta, 2324, Marta Adriana
+Punta Alta, Pehuen-co, 1210, Ana
+Pehuen-co, Bahia Blanca, 1567, Candela
+Bahia Blanca, Santa Rosa, 1125, Brisa
+Santa Rosa, Victorica, 3145, Olivia
+Victorica, Casa de Piedra, 3415, Mauro
+Casa de Piedra, Villa Regina, 3789, Fernando
+Villa Regina, Sierra Grande, 0, Muriel
+Sierra Grande, Trelew, 110, Andrea
+Trelew, Paso de Indios, 213, Juan Pedro
+Paso de Indios, Esquel, 1010, Federico

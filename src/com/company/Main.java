@@ -18,7 +18,7 @@ public class Main {
     public static void main(String[] args) {
 
         // Generate sub-graphs from main graphs
-        int[] graphsSizes = {3, 4, 5,6,7};
+        int[] graphsSizes = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
         generateFiles("/Users/juan/code/sp/src/com/company/data/graph.txt", graphsSizes);
 
         int sourceAux = 0;
@@ -29,12 +29,13 @@ public class Main {
         // Run both options for each graph
         for(int i=0; i<graphsSizes.length; i++){
             long t0 = System.currentTimeMillis();
-            List<List<Node>> graph = loadGraphFromFile("/Users/juan/code/sp/src/com/company/data/generated/graph-"+graphsSizes[i]);
+            List<List<Node>> graph = loadGraphFromFile("/Users/juan/code/sp/src/com/company/data/generated/graph-"+graphsSizes[i],graphsSizes[i]);
             int V = getCityNumbers().size();
             sourceAux = findCityNumber("NEUQUEN");
+            System.out.println(sourceAux);
             Dijkstra dpq = new Dijkstra(V);
             dpq.dijkstra(graph, sourceAux);
-            System.out.println("The shorted path from node :");
+            System.out.println("The shorted path from node :"+graphsSizes[i]);
             String aux = "";
             long t1 = System.currentTimeMillis();
             System.out.println("-------- Non Dynamic Dijkstra -----------");
@@ -54,12 +55,12 @@ public class Main {
 
         for(int i=0; i<graphsSizes.length; i++){
             long t0 = System.currentTimeMillis();
-            List<List<Node>> graph = loadGraphFromFile("/Users/juan/code/sp/src/com/company/data/generated/graph-"+graphsSizes[i]);
+            List<List<Node>> graph = loadGraphFromFile("/Users/juan/code/sp/src/com/company/data/generated/graph-"+graphsSizes[i],graphsSizes[i] );
             int V = getCityNumbers().size();
             String aux = "";
             FloydWarshall fw = new FloydWarshall(graph, V);
             long t1 = System.currentTimeMillis();
-            System.out.println("-------- Dynamic Floyd Warshall ---------");
+            System.out.println("-------- Dynamic Floyd Warshall ---------"+graphsSizes[i]);
             for (int h = 0; h <V; h++){
                 aux = fw.shortedPath(sourceAux,h)+"";
 

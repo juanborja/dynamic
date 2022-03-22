@@ -87,13 +87,13 @@ public class dataLoader {
         }
 
     }
-    public static List<List<Node>> loadGraphFromFile (String filePath){
+    public static List<List<Node>> loadGraphFromFile (String filePath, int size){
         loadCityNumbers(filePath);
         File file = new File(filePath);
         BufferedReader br = null;
         List<List<Node>> graph
                 = new ArrayList<List<Node> >();
-        for (int i = 0; i < 30; i++) {
+        for (int i = 0; i <= size; i++) {
             List<Node> item = new ArrayList<Node>();
             graph.add(item);
         }
