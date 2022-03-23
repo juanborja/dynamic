@@ -18,8 +18,9 @@ public class Main {
     public static void main(String[] args) {
 
         // Generate sub-graphs from main graphs
-        int[] graphsSizes = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
-        generateFiles("/Users/juan/code/sp/src/com/company/data/graph.txt", graphsSizes);
+        int[] graphsSizes = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 1000, 5000, 6000, 7000, 8000, 9000, 10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000, 200000, 500000, 800000, 1000000};
+        generateRandomConnections(1000000, "/Users/juan/code/sp/src/com/company/data/graph.txt");
+        generateFiles("/Users/juan/code/sp/src/com/company/data/generated/graph-base", graphsSizes);
 
         int sourceAux = 0;
         long[] dLoadTimes = new long[graphsSizes.length];

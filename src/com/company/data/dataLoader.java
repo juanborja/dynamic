@@ -3,16 +3,16 @@ package com.company.data;
 import com.company.algorithm.Node;
 
 import java.io.*;
+import java.nio.file.Files;
 import java.util.*;
+
+import static com.company.data.Cities.randomCity;
 
 
 public class dataLoader {
     public static Set<String> cityNumbers = new HashSet<>();
     public static void generateFiles(String filePath, int[] sizes){
-        File dir = new File("/Users/juan/code/sp/src/com/company/data/generated/");
-        for(File file: dir.listFiles())
-            if (!file.isDirectory())
-                file.delete();
+
         for(int i=0; i< sizes.length; i++){
         File file = new File(filePath);
         BufferedReader br = null;
@@ -153,7 +153,40 @@ public class dataLoader {
         return -1;
 
     }
+    public static void generateRandomConnections(int quantity, String file){
+        File dir = new File("/Users/juan/code/sp/src/com/company/data/generated/");
+        for(File filed: dir.listFiles())
+            if (!filed.isDirectory())
+                filed.delete();
+        File source = new File(file);
+        File out = new File("/Users/juan/code/sp/src/com/company/data/generated/graph-base");
+        System.out.println(out.toPath());
+        try {
+            Files.copy(source.toPath(), out.toPath());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
+        for(int i=0;i<quantity; i++){
+            String from = randomCity();
+            String to =   randomCity();
+            while (from == to){
+                to = randomCity();
+            }
+            int value = new Random().nextInt(10000);
+            // TODO generate pseudo-random name
+            String name ="Name";
+            try {
+                BufferedWriter bout = new BufferedWriter(
+                        new FileWriter(out, true));
+                bout.write(from+", "+to+", "+value+", "+name+"\n");
+                bout.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+        }
+    }
     public static String getCityByNumber (int i){
          List<String> cityList = new ArrayList<>(cityNumbers);
          try{
