@@ -18,7 +18,7 @@ public class Main {
     public static void main(String[] args) {
 
         // Generate sub-graphs from main graphs
-        int[] graphsSizes = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 1000, 5000, 6000, 7000, 8000, 9000, 10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000, 200000, 500000, 800000, 1000000};
+        long[] graphsSizes = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 1000, 5000, 6000, 7000, 8000, 9000, 10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000, 200000, 300000, 400000, 500000, 1000000};
         generateRandomConnections(1000000, "/Users/juan/code/sp/src/com/company/data/graph.txt");
         generateFiles("/Users/juan/code/sp/src/com/company/data/generated/graph-base", graphsSizes);
 
@@ -35,11 +35,11 @@ public class Main {
             sourceAux = findCityNumber("NEUQUEN");
             System.out.println(sourceAux);
             Dijkstra dpq = new Dijkstra(V);
+            long t1 = System.currentTimeMillis();
             dpq.dijkstra(graph, sourceAux);
             System.out.println("The shorted path from node :"+graphsSizes[i]);
             String aux = "";
-            long t1 = System.currentTimeMillis();
-            System.out.println("-------- Non Dynamic Dijkstra -----------");
+            System.out.println("-------- Non Dynamic Dijkstra -----------"+graphsSizes[i]);
             for (int j = 0; j < dpq.dist.length; j++){
                 aux = dpq.dist[j]+"";
                 if (dpq.dist[j] == INF){
@@ -80,5 +80,16 @@ public class Main {
         System.out.println(Arrays.toString(fwLoadTimes));
         System.out.println(Arrays.toString(dTimes));
         System.out.println(Arrays.toString(dLoadTimes));
+        List<long[]> ys = new ArrayList<>();
+        ys.add(fwTimes);
+        ys.add(dTimes);
+        String[] titles = {"Floyd Warshall", "Dijkstra" };
+        Grafica ex = new Grafica(graphsSizes,ys, "Tiempo de consulta", titles);
+        ex.setVisible(true);
 
+        List<long[]> ys1 = new ArrayList<>();
+        ys1.add(fwLoadTimes);
+        ys1.add(dLoadTimes);
+        Grafica ex1 = new Grafica(graphsSizes,ys1, "Tiempo de carga", titles);
+        ex1.setVisible(true);
 }}

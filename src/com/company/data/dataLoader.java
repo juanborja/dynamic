@@ -11,7 +11,7 @@ import static com.company.data.Cities.randomCity;
 
 public class dataLoader {
     public static Set<String> cityNumbers = new HashSet<>();
-    public static void generateFiles(String filePath, int[] sizes){
+    public static void generateFiles(String filePath, long[] sizes){
 
         for(int i=0; i< sizes.length; i++){
         File file = new File(filePath);
@@ -87,7 +87,7 @@ public class dataLoader {
         }
 
     }
-    public static List<List<Node>> loadGraphFromFile (String filePath, int size){
+    public static List<List<Node>> loadGraphFromFile (String filePath, long size){
         loadCityNumbers(filePath);
         File file = new File(filePath);
         BufferedReader br = null;
