@@ -1,0 +1,9 @@
+Neuquen, Gral Roca, 500, Juan
+Gral Roca, Rio Colorado, 300, Carlos
+Rio Colorado, Bahia Blanca, 670, Pedro
+Bahia Blanca, Necochea, 560, Laura
+Neuquen, Allen, 450, Roberto
+Allen, Necochea, 3000, Maria
+Neuquen, Centenario, 250, Julio
+Centenario, Necochea, 2300, Pilar
+Neuquen, Plottier, 100, Dario
