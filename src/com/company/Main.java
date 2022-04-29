@@ -1,17 +1,14 @@
 package com.company;
 
-import com.company.algorithm.Dijkstra;
-import com.company.algorithm.FloydWarshall;
-import com.company.algorithm.Node;
+import com.company.algorithms.Dijkstra;
+import com.company.algorithms.FloydWarshall;
+import com.company.algorithms.Node;
 
-import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import static com.company.data.dataLoader.*;
-import static com.sun.tools.attach.VirtualMachine.list;
 
 public class Main {
     public final static int INF = 999999999;

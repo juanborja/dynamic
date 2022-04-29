@@ -1,16 +1,17 @@
 package com.company.data;
 
-import com.company.algorithm.Node;
+import com.company.algorithms.Node;
 
 import java.io.*;
 import java.nio.file.Files;
 import java.util.*;
 
-import static com.company.data.Cities.randomCity;
+
 
 
 public class dataLoader {
     public static Set<String> cityNumbers = new HashSet<>();
+    public static Cities c = new Cities();
     public static void generateFiles(String filePath, long[] sizes){
 
         for(int i=0; i< sizes.length; i++){
@@ -168,10 +169,10 @@ public class dataLoader {
         }
 
         for(int i=0;i<quantity; i++){
-            String from = randomCity();
-            String to =   randomCity();
+            String from = c.randomCity();
+            String to =   c.randomCity();
             while (from == to){
-                to = randomCity();
+                to = c.randomCity();
             }
             int value = new Random().nextInt(10000);
             // TODO generate pseudo-random name

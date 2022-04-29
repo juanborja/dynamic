@@ -1,4 +1,4 @@
-package com.company.algorithm;
+package com.company.algorithms;
 import java.util.*;
 
 public class Dijkstra {
